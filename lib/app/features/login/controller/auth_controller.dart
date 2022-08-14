@@ -21,7 +21,7 @@ class AuthController extends GetxController {
     _user.bindStream(auth.userChanges());
     ever(_user, _initialScreen);
   }
-
+  //get user navigate
   _initialScreen(User? user) {
     if (user == null) {
       Get.offAll(() => LoginPage());
